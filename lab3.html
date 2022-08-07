@@ -3,27 +3,40 @@
 <head>
 <meta charset='utf-8'>
 </head>
+<style>
+    table,th,td{
+        border:1px solid black;
+    }
+</style>
 <body>
     <h1>เข้าสู่ระบบ</h1>
-    <form action="login.html">
-USERNAME :
-<input
-autofocus
-type="text"
-name="username">
-<br>
-Password:
-<input
-type="password"
-name="password">
-<br>
-กรุณาพิมพ์ตัวเลขที่กำหนด:<br>1559<br>
-<input
-type="text"
-name=".."
-pattern="1559"
-required>
-<br>
+<form action="login.html">
+<table>
+    <tr><th>USERNAME :</th>
+        <th><input
+        autofocus
+        type="text"
+        name="username"
+        required></th>
+        <br>
+    </tr>
+    <tr>
+        <th>Password:</th>
+        <th><input
+        type="password"
+        name="password"
+        required></th>
+        <br>
+    </tr>
+    <tr><td colspan="2">
+        กรุณาพิมพ์ตัวเลขที่กำหนด:<br>1559<br>
+        <input
+        type="text"
+        name=".."
+        pattern="1559"
+        required></td>
+    </tr>
+</table>
 <input type="image" src="log.png" alt="Submit" width="48" height="48">
 </form>
 </body>
